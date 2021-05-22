@@ -1,0 +1,53 @@
+[listening]
+[listening.keywords]
+NeverMind = ["never mind"]
+Total = ["total", "so far"]
+Undo = ["undo"]
+Eat = ["eat", "eating"]
+Math = ["whats", "what's", "what is"]
+Yes = ["yes", "yeah", "yep"]
+Name = ["i am", "i'm", "it's", "name is"]
+Greet = ["hi", "hey", "hello", "how are you"]
+
+# should be lower case
+[listening.replacements]
+# homonyms
+too = "2"
+to = "2"
+
+# amount-related
+quarter = "0.25"
+third = "0.33"
+half = "0.50"
+quarters = "* 0.25"
+thirds = "* 0.33"
+halfs = "* 0.50"
+and = "+"
+a = ""
+
+# math-related
+plus = "+"
+add = "+"
+minus = "-"
+less = "-"
+times = "*"
+"multiplied by" = "*"
+"divided by" = "/"
+"over" = "/"
+
+[speaking]
+[speaking.message_patterns]
+
+Ok = "Ok"
+Total = "So far today you have consumed {energy} energy units"
+UndoSuccess = "Ok, I removed the last entry"
+SameConfirm = "Same {food_name} as last time?"
+EnergyQuery = "What is the energy value of {food_name}?"
+EnergyQueryRetry = "I couldn't catch that, what is the energy value of {food_name}"
+AddingNotification = "Adding {food_name} at {energy}"
+Math = "It's {energy}"
+BadInput = "I couldn't catch that, what were you saying?"
+DbError = "Can't read from database"
+SetUp = "Hello, I will help you keep track what you eat, what's your name?"
+SetUpRetry = "Dude, just tell me what to call you"
+Greet = "Hi {user_name}"

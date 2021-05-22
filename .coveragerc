@@ -1,0 +1,8 @@
+[run]
+omit = test*
+       */__init__.py
+       venv/*
+
+[report]
+exclude_lines = pragma: no cover
+                pass
